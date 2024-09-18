@@ -36,7 +36,7 @@ const Chatbot = () => {
       setWaitingForName(false);
       try {
         const response = await axios.post(
-          "http://localhost:3000/dev/lex/fulfillment",
+          "http://localhost:4000/dev/lex-fulfillment",
           {
             currentIntent: {
               name: "GreetUser",
@@ -75,7 +75,7 @@ const Chatbot = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:3000/dev/lex/fulfillment",
+          "http://localhost:4000/dev/lex-fulfillment",
           {
             currentIntent: {
               name: intentName,
